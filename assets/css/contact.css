@@ -1,0 +1,171 @@
+/* Global */
+:root {
+    --yellow: #ffc600;
+    --black: #272727;
+    --white: #f8f8f8;
+}
+
+html {
+    box-sizing: border-box;
+    color: var(--black);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    letter-spacing: -1px;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+header {
+    background: var(--yellow);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#header>.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover {
+    border-style: solid;
+    padding: 5px;
+    background: var(--white);
+}
+
+/* Header section ends here */
+
+
+/* Contact */
+main#contact > .container {
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 600px;
+    grid-gap: 20px;
+    justify-content: center;
+    padding-top: 30px;
+    height: 950px;
+}
+
+.contact-us {
+    background: var(--yellow);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    transition: transform .2s;
+    padding: 30px;
+}
+
+.contact-us::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+}
+
+.contact-us:hover,
+.contact-us:focus {
+    transform: scale3d(1.006, 1.006, 1);
+}
+
+.contact-us:hover::after,
+.contact-us:focus::after {
+    opacity: 1;
+}
+
+.contact-us p {
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-us > .first {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+#footer>.container {
+    display: grid;
+    grid-template-columns: 145px 250px 250px 200px;
+    grid-gap: 20px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.bottom {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.copyright {
+    font-size: 17px;
+    font-weight: bold;
+}
