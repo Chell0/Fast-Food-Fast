@@ -1,0 +1,194 @@
+/* Global */
+:root {
+    --yellow: #ffc600;
+    --black: #272727;
+    --white: #f8f8f8;
+}
+
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    color: var(--black);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    letter-spacing: -1px;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+
+#header>.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    /* background: var(--yellow); */
+    background: url("../img/checkout.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1550px 800px;
+    height: 800px;
+    padding-top: 20px;
+}
+
+header a {
+    background: var(--yellow);
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    background: var(--yellow);
+    border-radius: 6px;
+    font-size: 45px;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover {
+    border-style: solid;
+    padding: 5px;
+    background: var(--white);
+}
+
+
+
+/* MENU */
+#order>.container {
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: 400px 400px 400px 400px;
+    grid-gap: 20px;
+    justify-content: center;
+    padding-top: 30px;
+    height: 1300px;
+}
+
+#order>.container>.meal {
+    background: rgba(0, 0, 0, 0.03);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    font-size: 14px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    transition: transform .5s;
+}
+
+#order>.container>.meal::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+}
+
+#order>.container>.meal:hover,
+#order>.container>.meal:focus {
+    transform: scale3d(1.006, 1.006, 1);
+}
+
+#order>.container>.meal:hover::after,
+#order>.container>.meal:focus::after {
+    opacity: 1;
+}
+
+#order>.container>.meal button {
+    background: var(--yellow);
+    border: 0;
+    padding: 10px 20px;
+}
+
+#order>.container>.meal button a {
+    text-decoration: none;
+    color: var(--black);
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+#footer>.container {
+    margin-left: 150px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+}
+
+.copyright {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+
+    header #branding,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+}
