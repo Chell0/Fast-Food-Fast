@@ -97,7 +97,7 @@ main#contact > .container {
 }
 
 .contact-us {
-    background: var(--yellow);
+    background-color: #f8f8f8;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -143,6 +143,11 @@ main#contact > .container {
 .contact-us > .first {
     font-size: 1rem;
     font-weight: bold;
+}
+
+.contact-us > p > span.email {
+    font-size: 1rem;
+    color: tomato;
 }
 
 /* Footer */
