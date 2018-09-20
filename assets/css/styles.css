@@ -100,12 +100,12 @@ header a:hover {
 /* MENU */
 #order>.container {
     display: grid;
-    grid-template-columns: 350px 350px 350px 350px;
-    grid-template-rows: 400px 400px 400px 400px;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
     grid-gap: 20px;
     justify-content: center;
     padding-top: 30px;
-    height: 1300px;
+    height: 1100px;
 }
 
 #order>.container>.meal {
@@ -166,10 +166,12 @@ footer {
 }
 
 #footer>.container {
-    margin-left: 150px;
+    margin-left: 100px;
     padding: 40px;
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: 145px 250px 250px 200px;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 .copyright {
