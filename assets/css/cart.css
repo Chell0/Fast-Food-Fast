@@ -16,10 +16,6 @@ html {
 }
 
 body {
-    background: url("../img/checkout.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1550px 800px;
     letter-spacing: -1px;
     font-family: -apple-system,
         BlinkMacSystemFont,
@@ -90,9 +86,17 @@ header a:hover {
 
 
 /* Cart Styling Begins Here */
-.container {
-    margin: auto;
+#food-cart {
+    background-image: url('../img/checkout.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#food-cart > .container {
     width: 80%;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
 }
 
 .badge {
@@ -159,7 +163,6 @@ header a:hover {
 
 .food-cart:after {
     bottom: 100%;
-    left: 89%;
     border: solid transparent;
     content: " ";
     height: 0;
@@ -203,4 +206,25 @@ header a:hover {
     content: "";
     display: table;
     clear: both;
+}
+
+/* FOOTER */ 
+
+footer {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+#footer>.container {
+    margin-left: 100px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 145px 250px 250px 200px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.copyright {
+    font-size: 17px;
+    font-weight: bold;
 }
