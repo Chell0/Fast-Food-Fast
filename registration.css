@@ -47,7 +47,6 @@ header > .container {
 header a {
     color: var(--black);
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 16px;
 }
 
@@ -81,8 +80,9 @@ header a:hover {
     background: var(--white);
 }
 
-/* Login */
-#login {
+/* SignUp */
+#signup {
+    margin-top: 40px;
     height: 600px;
 }
 
@@ -153,11 +153,6 @@ header a:hover {
     border-radius: 5px;
 }
 
-/* Login */
-#signup {
-    margin-top: 40px;
-    height: 800px;
-}
 
 #button {
     width: 250px;
@@ -169,13 +164,13 @@ header a:hover {
 #ph {
     outline: 0px;
     width: 75px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
 
 #phone {
     width: 180px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     outline: 0px;
 }
@@ -188,11 +183,11 @@ header a:hover {
 #butt {
     width: 390px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     outline: 0px;
     background-color: var(--black);
     border: 2px solid var(--yellow);
-    color: var(--white);
+    color: var(--yellow);
     font-size: 18px;
 }
 
@@ -201,6 +196,7 @@ header a:hover {
     background: var(--yellow);
     color: var(--black);
     text-align: center;
+    border: 2px solid var(--black);
     transition: all 0.5s ease-out;
 }
 
