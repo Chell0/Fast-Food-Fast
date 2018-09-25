@@ -31,17 +31,17 @@ body {
     padding: 10px 20px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
 /* Header */
 header {
     background: var(--yellow);
     padding-top: 20px;
     padding-bottom: 10px;
+}
+
+header > .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 header a {
@@ -155,7 +155,8 @@ header a:hover {
 
 /* Login */
 #signup {
-    height: 600px;
+    margin-top: 40px;
+    height: 800px;
 }
 
 #button {
@@ -167,13 +168,13 @@ header a:hover {
 
 #ph {
     outline: 0px;
-    width: 65px;
-    padding: 5px;
+    width: 75px;
+    padding: 10px;
     border-radius: 5px;
 }
 
 #phone {
-    width: 170px;
+    width: 180px;
     padding: 10px;
     border-radius: 5px;
     outline: 0px;
@@ -185,7 +186,7 @@ header a:hover {
 }
 
 #butt {
-    width: 250px;
+    width: 390px;
     padding: 10px;
     border-radius: 5px;
     outline: 0px;
@@ -204,12 +205,25 @@ header a:hover {
 }
 
 
-/* Footer */
+/* FOOTER */
+
 footer {
-    padding: 20px;
     background-color: var(--yellow);
     color: var(--black);
-    text-align: center;
+}
+
+#footer>.container {
+    margin-left: 100px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 145px 250px 250px 200px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.copyright {
+    font-size: 17px;
+    font-weight: bold;
 }
 
 /* Media Queries */
